@@ -7,6 +7,14 @@
     background-color: burlywood;
 }
 
+.container_simple{
+    width: auto;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: burlywood;
+}
+
 .searcher {
     
     display: flex;

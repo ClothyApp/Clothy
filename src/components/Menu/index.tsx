@@ -10,6 +10,8 @@ import {
   FiShoppingBag,
 } from "react-icons/fi";
 import { useScreen } from "usehooks-ts";
+import Link from "next/link";
+import { Searcher } from "../";
 
 interface MenuProps {}
 
@@ -52,27 +54,35 @@ function Menu({}: MenuProps) {
       {showMenu && screen.width <= 479 ? (
         <div ref={menuRef} className={`${styles.aside_menu} ${showMenu ? styles.open : ""}`}>
           <div className={styles.section_user}>
-            <FiShoppingBag size={30} />
-            <FiShoppingCart size={30} />
-            <FiUser size={30} />
+            <Link href={"/"}>
+              <FiShoppingBag size={30} />
+            </Link>
+            <Link href={"/cart"}>
+              <FiShoppingCart size={30} />
+            </Link>
+            <Link href={"/profile"}>
+              <FiUser size={30} />
+            </Link>
           </div>
-          <div className={styles.search}>Searcher</div>
-          <div className={styles.section_categories}>
-            <p>option</p>
-            <p>option</p>
-            <p>option</p>
-            <p>option</p>
-            <p>option</p>
-            <p>option</p>
-            <p>option</p>
+          <div className={styles.search}>
+            {/* <Searcher mode="simple" /> */}
           </div>
           <div className={styles.section_categories}>
-            <p>options</p>
-            <p>options</p>
-            <p>options</p>
-            <p>options</p>
-            <p>options</p>
-            <p>options</p>
+            <p>Urbano</p>
+            <p>Camisetas</p>
+            <p>Pantalones</p>
+            <p>Faldas</p>
+            <p>Sudaderas</p>
+            <p>Vestidos</p>
+            <p>Sueteres</p>
+          </div>
+          <div className={styles.section_categories}>
+            <p>Formal</p>
+            <p>Deportivo</p>
+            <p>Ropa de Playa</p>
+            <p>Ropa interior</p>
+            <p>Accesorios</p>
+            <p>Calzado</p>
           </div>
           <div className={styles.section_support}>
             <button>Modo vendedor</button>
