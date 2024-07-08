@@ -11,9 +11,9 @@ const StoreWidgets: React.FC<StoresWidgetProps> = ({}) => {
       <h1>Stores</h1>
       <div className={styles.wrapper_stores}>
         <div className={styles.stores}>
-            {testStores.map((e, i: number) => {
+          {testStores.map((e, i: number) => {
             return <Store key={i} />;
-            })}
+          })}
         </div>
       </div>
     </section>

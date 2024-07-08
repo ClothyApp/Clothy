@@ -1,20 +1,48 @@
-.stores_widget{
-    padding: 1rem;
-
-}
-.wrapper_stores{
-    padding: 1rem;
+.stores_widget {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    gap: 1rem;
-
-    border-radius: 12px;
 }
 
-.stores{
+.wrapper_stores {
+    width: 100%;
+    overflow-x: auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.stores {
     width: 100%;
     overflow: hidden;
     display: flex;
+    justify-content: center;
     gap: 1rem;
+}
+
+@media screen and (max-width: 479px) {
+    .stores_widget {
+        display: flex;
+        align-items: self-start;
+        padding: 1rem;
+    }
+
+    .wrapper_stores {
+        width: 100%;
+        overflow-x: auto;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: self-start;
+        overflow: hidden;
+    }
+
+    .stores {
+        overflow: hidden;
+        display: flex;
+        gap: 1rem;
+    }
 }
