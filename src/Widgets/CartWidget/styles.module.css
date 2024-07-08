@@ -1,0 +1,26 @@
+.cart_widget{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.wrapper_cart_items{
+    margin: 1rem 0;
+    height: 50vh;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.btn_pay{
+    color: #FFFFFF;
+    width: 50%;
+    height: 52px;
+    border-radius: 100px;
+    background-color: #6C2E2E ;
+}
