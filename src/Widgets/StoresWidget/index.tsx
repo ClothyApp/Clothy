@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./styles.module.css";
 import { Store } from "@/components";
-import Link from "next/link";
 
 interface StoresWidgetProps {}
 
@@ -13,7 +12,7 @@ const StoreWidgets: React.FC<StoresWidgetProps> = ({}) => {
       <div className={styles.wrapper_stores}>
         <div className={styles.stores}>
           {testStores.map((e, i: number) => {
-            return <Store key={i} />
+            return <Store key={i} />;
           })}
         </div>
       </div>
