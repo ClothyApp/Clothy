@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 :root {
     --layout-bg-color: blue;
     /*colors*/
@@ -40,21 +42,24 @@
     --text-big-max: 2rem;
     --text-big-mid: 1.5rem;
     --text-big-min: 1.25rem;
-  
+
     --text-medium-max: 1.25rem;
     --text-medium-mid: 1rem;
     --text-medium-min: 0.875rem;
-  
+
     --text-small-max: 1rem;
     --text-small-mid: 0.75rem;
     --text-small-min: 0.625rem;
 
 }
 
-
+html,
 body {
+    font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
-    width: 100%;
+    max-width: 100vw;
+
+
 }
 
 
@@ -63,12 +68,17 @@ button {
     border: none;
 }
 
-input{ 
+input {
     background-color: transparent;
     border: none;
 }
 
-input::placeholder{
+input::placeholder {
     left: 25px;
     position: absolute;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }

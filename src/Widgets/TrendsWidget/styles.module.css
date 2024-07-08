@@ -1,5 +1,7 @@
 .trends_widget{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     padding-left: 1rem ;
 
@@ -11,12 +13,26 @@
     z-index: 1;
     display: flex;
     align-items: center;
-    justify-content: start;
-    
+    justify-content: center;
     overflow: hidden;
+    gap: 2rem;
 }
 
-.trend {
-    flex: 1; /* Distribuir espacio restante equitativamente */
-    margin: 5px;
+
+
+
+@media screen and (max-width: 991px) {
+
+}
+
+@media screen and (max-width: 767px) {
+    
+}
+@media screen and (max-width: 479px) {
+    .trends_widget{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-left: 1rem ;
+    }
 }

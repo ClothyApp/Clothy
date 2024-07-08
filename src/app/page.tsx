@@ -7,14 +7,17 @@ import styles from "./page.module.css";
 import React from "react";
 import { HeaderNavWidget } from "@/Widgets";
 
+
 interface indexPageProps {}
 
 function index({}: indexPageProps) {
+
   return (
     <div className={styles.container}>
       <header className={styles.header}>
         <HeaderNavWidget />
       </header>
+
       <main className={styles.main}>
         <StoreWidgets />
         <TrendsWidget/>
