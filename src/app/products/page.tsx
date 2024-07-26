@@ -10,7 +10,7 @@ function Products() {
     return (
         <div className={styles.container}>
           <header className={styles.header}>
-            <HeaderNavWidget />
+            <HeaderNavWidget mode="complete" />
           </header>
           <main className={styles.main}>
             <StoresWidget />

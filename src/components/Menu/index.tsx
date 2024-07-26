@@ -65,7 +65,7 @@ function Menu({}: MenuProps) {
             </Link>
           </div>
           <div className={styles.search}>
-            {/* <Searcher mode="simple" /> */}
+            <Searcher mode="searcher" />
           </div>
           <div className={styles.section_categories}>
             <p>Urbano</p>

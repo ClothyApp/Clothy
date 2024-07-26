@@ -1,0 +1,23 @@
+.container{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(189.65deg, #9A4C4C -0.88%, #AC6C6A 19.53%, #C49591 62.41%, #D3B0AA 101.2%);
+}
+
+
+
+
+/*---------------index page---------------*/
+
+.wrapper_brand{
+
+}
+.wrapper_auth{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
