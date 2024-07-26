@@ -1,0 +1,23 @@
+.container {
+    margin: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.wrapper_photo {
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+    border-radius: 50%;
+
+}
+
+.user_photo {
+    width: 100px;
+    height: 100px;
+}
+
+.user_name {}
+
+.user_account {}

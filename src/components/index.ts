@@ -3,6 +3,8 @@ export { default as CartItem } from './CartItem';
 export { default as Logo } from './Logo';
 export { default as Menu } from './Menu';
 export { default as ProductCard } from './ProductCard';
+export { default as ProfileMenu } from './ProfileMenu';
 export { default as Searcher } from './Searcher';
 export { default as Store } from './Store';
+export { default as User } from './User';
 export * from './index';

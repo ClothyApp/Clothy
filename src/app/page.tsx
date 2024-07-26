@@ -14,17 +14,8 @@ function index({}: indexPageProps) {
 
   return (
     <div className={styles.container}>
-      <header className={styles.header}>
-        <HeaderNavWidget />
-      </header>
-
       <main className={styles.main}>
-        <StoreWidgets />
-        <TrendsWidget/>
-        <StoreWidgets />
-        <CTAVendorWidget/>
-        <TrendsWidget/>
-        <TrendsWidget/>
+        <HeaderNavWidget mode="complete"/>
       </main>
       <footer className={styles.footer}></footer>
     </div>

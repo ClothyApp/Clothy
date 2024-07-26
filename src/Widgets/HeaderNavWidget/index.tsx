@@ -2,14 +2,21 @@ import React from "react";
 import styles from "./styles.module.css";
 import { Menu, Searcher, Logo } from "@/components";
 
-interface HeaderNavWidgetProps {}
+type ModeHeader = "complete" | "searcher" | "menu";
+interface HeaderNavWidgetProps {
+  mode: ModeHeader;
+}
 
-const HeaderNavWidget: React.FC<HeaderNavWidgetProps> = ({}) => {
+const HeaderNavWidget: React.FC<HeaderNavWidgetProps> = ({
+  mode = "complete",
+}) => {
   return (
     <section className={styles.header_nav_widget}>
-      <Logo />
-      <Searcher/>
-      <Menu />
+      {mode === "complete" || mode === "menu" ? <Logo /> : <></>}
+      <h1 className={styles.title}>Vistete con estilo.</h1>
+      {mode === "complete" || mode === "searcher" ? <Searcher /> : <></>}
+      <h5 className={styles.message}>¡Busca la mejores prendas!</h5>
+      {/* {mode === "complete" || mode === "menu" ? <Menu /> : <></>} */}
     </section>
   );
 };

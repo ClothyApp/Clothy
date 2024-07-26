@@ -11,7 +11,7 @@ function Cart() {
     return (
         <div className={styles.container}>
           <header className={styles.header}>
-            <HeaderNavWidget />
+            <HeaderNavWidget mode="menu" />
           </header>
           <main className={styles.main}>
             <CartWidget/>
